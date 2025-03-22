@@ -1,4 +1,4 @@
-Data Visualization App - Customer Personality Analysis
+### Data Visualization App - Customer Personality Analysis
 
 
 
@@ -17,7 +17,7 @@ Les clients avec enfants dépensent-ils moins que les autres ?
 
 
 
-🏗️ Technologies utilisées
+### 🏗️ Technologies utilisées
 
 Backend : Flask, MongoDB
 
@@ -27,7 +27,7 @@ Communication : Fetch API pour consommer l API Flask
 
 
 
-📂 Architecture du projet
+### 📂 Architecture du projet
 
 
 │── app.py  # Fichier principal de l'API Flask
@@ -52,15 +52,20 @@ Communication : Fetch API pour consommer l API Flask
 │   │   │── BoxplotSpending.js  # Boxplot comparaison avec/sans enfants
 │── package.json  # Dépendances React
 
+📂 Notebooks
+
+/Notebook
+│── Analyse-Comportement-Client.ipynb  # Notebook Jupyter avec des analyses avancées
+│── anaPersoclien.csv  # Données pour l'analyse
 
 
-🔧 Installation et Configuration
+
+### 🔧 Installation et Configuration
 
 
 
 1️⃣ Installer et configurer le backend (Flask)
 
-cd backend
 python -m venv venv  # Créer un environnement virtuel
 source venv/bin/activate  # Activer l'environnement (Mac/Linux)
 venv\Scripts\activate  # Activer l'environnement (Windows)
@@ -125,4 +130,13 @@ Intégrer un dashboard interactif avec Dash (Python) ou Recharts (React)
 Héberger l application sur un serveur (Heroku, Vercel, etc.)
 
 
-IMPORTANT : Un notebook Jupyter sera fourni en amont de l app ou vous pourrez avoir d autres analyses 
+📚 Analyses complémentaires
+
+Un notebook Jupyter est disponible dans le dossier Notebook sous le nom Analyse-Comportement-Client.ipynb. 
+
+Il contient des analyses approfondies et des visualisations supplémentaires basées sur le fichier anaPersoclien.csv. 
+
+Vous pouvez l'ouvrir avec Jupyter Notebook ou Jupyter Lab pour explorer les données plus en détail.
+
+PS: N'oublie pas de mettre l'URL POUR VOTRE CLIENT MONGODB
+
