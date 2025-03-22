@@ -1,0 +1,128 @@
+Data Visualization App - Customer Personality Analysis
+
+
+
+📌 Présentation du Projet
+
+Ce projet est une application web de visualisation de données basée sur le dataset Customer Personality Analysis. L objectif est d explorer et d analyser les habitudes de consommation des clients en utilisant MongoDB, Flask et React.
+
+Les analyses permettent de répondre à des questions comme :
+
+Quelle est la répartition des clients par âge ?
+
+Les campagnes marketing influencent-elles les dépenses des clients ?
+
+Les clients avec enfants dépensent-ils moins que les autres ?
+
+
+
+
+🏗️ Technologies utilisées
+
+Backend : Flask, MongoDB
+
+Frontend : React, Plotly.js
+
+Communication : Fetch API pour consommer l API Flask
+
+
+
+📂 Architecture du projet
+
+
+│── app.py  # Fichier principal de l'API Flask
+│── config.py  # Configuration de MongoDB
+│── requirements.txt  # Dépendances Python
+│── /routes  # Routes Flask
+│   │── dashboard.py  et  detailed_dashboard# Routes pour les analyses
+│   │── home.py  # Page d'accueil de l'API
+│── /models  # Modèle pour gérer MongoDB
+│   │── mongo.py  # Connexion à MongoDB
+│── /services  # Logique métier et traitements des données
+│   │── analytics.py  et   detailed_analyses # Fonctions d'analyse
+│── README.md  # Documentation
+
+/frontend
+│── src
+│   │── App.js  # Composant principal React
+│   │── index.js  # Point d'entrée React
+│   │── /components  # Composants React pour les visualisations
+│   │   │── AveragePurchaseType.js  # Diagramme camembert des dépenses
+│   │   │── MarketingImpactChart.js  # Bar chart de l'impact des campagnes
+│   │   │── BoxplotSpending.js  # Boxplot comparaison avec/sans enfants
+│── package.json  # Dépendances React
+
+
+
+🔧 Installation et Configuration
+
+
+
+1️⃣ Installer et configurer le backend (Flask)
+
+cd backend
+python -m venv venv  # Créer un environnement virtuel
+source venv/bin/activate  # Activer l'environnement (Mac/Linux)
+venv\Scripts\activate  # Activer l'environnement (Windows)
+pip install -r requirements.txt  # Installer les dépendances
+python app.py  # Lancer le serveur Flask
+
+Le backend sera accessible à http://127.0.0.1:5000/.
+
+
+
+2️⃣ Installer et configurer le frontend (React)
+
+cd frontend
+npm install  # Installer les dépendances
+npm start  # Lancer l'application React
+
+L application sera disponible à http://localhost:3000/.
+
+
+
+🌟 Fonctionnalités Implémentées
+
+
+
+📊 1. Visualisation des types d achats (Diagramme Camembert)
+
+Route API : /detailed-analysis/average-spending
+
+Composant React : AveragePurchaseType.js
+
+Description : Affiche un diagramme camembert des moyennes d achats par canal (web, catalogue, magasin).
+
+
+
+📈 2. Impact des campagnes marketing sur les dépenses (Bar Chart)
+
+Route API : /detailed-analysis/marketing-impact
+
+Composant React : MarketingImpactChart.js
+
+Description : Compare les dépenses des clients ayant participé ou non aux campagnes marketing.
+
+
+
+📉 3. Dépenses des clients avec/sans enfants (Boxplot)
+
+Route API : /detailed-analysis/spending-children
+
+Composant React : BoxplotSpending.js
+
+Description : Analyse les dépenses en fonction du nombre d’enfants.
+
+
+
+
+🚀 Améliorations possibles
+
+Ajouter plus de visualisations (corrélations, clustering des clients, etc.)
+
+Intégrer un dashboard interactif avec Dash (Python) ou Recharts (React)
+
+Héberger l application sur un serveur (Heroku, Vercel, etc.)
+
+
+IMPORTANT : Un notebook Jupyter sera fourni en amont de l app ou vous pourrez avoir d autres analyses 
