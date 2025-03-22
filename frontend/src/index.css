@@ -1,0 +1,27 @@
+/* global.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+  background-color: #d5dee2;
+  align-items: "center",
+  
+
+}
+
+/* Styles des boutons globaux */
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #b0c0c3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #38a0ab;
+}
